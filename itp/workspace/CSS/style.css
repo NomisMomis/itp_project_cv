@@ -1,0 +1,375 @@
+/* Timetable */
+body
+{
+	background:#fcfcfc;
+	background-color: #EFFBF2;
+	font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
+	color:#333;
+	font-size:15px
+}
+
+.top{
+	width:50px; 
+	height:30px;
+	padding:10px; 
+	text-align:center; 
+	font-weight: bold;
+	
+	text-decoration: none;
+	position:fixed;
+	top:5px;
+	right:20px;
+	background-color:#1E8BC3;
+	
+}
+.top:hover{
+	text-decoration:none;
+} 
+
+#img
+{
+	width:200px;
+	display: block;
+   margin:0 auto;
+    padding-left:220px;
+}
+
+a
+{
+	text-decoration:none;
+}
+	
+	
+.row-heading
+{
+	font-weight:500;font-size:.7em;text-transform:uppercase
+}
+	
+	
+.timetable .time-label
+{
+	font-size:14px;
+	font-family: monospaced;
+}
+
+#randomiser
+{
+	background-color:#6496c8;
+	color:#fff;
+	text-shadow: -2px 2px #346392;
+	font-weight: bold;
+	font-size:20px;
+	margin-left:25px;
+	margin-top:40px;
+	margin-bottom: 100px;
+	
+}
+ 
+
+ #shows{
+ 	 font-style: normal;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    font-family:arial;
+    font-weight: bold;
+    border-style: groove;
+  	margin-left:300px;
+	margin-top:-150px;
+	margin-bottom: 100px;
+    position: absolute;
+   
+  
+ }
+	
+#PersonalisedTT
+{
+	background-color:#6496c8;
+	color:#fff;
+	text-shadow: -2px 2px #346392;
+	font-weight: bold;
+	font-size:20px;
+	margin-right:40px;
+	margin-top:40px;
+	margin-bottom: 100px;
+	float:right;
+}
+
+h1
+{
+	text-align:center;
+}
+
+
+/* */
+#login-form
+{
+	 margin-top:70px;
+}
+
+table
+{
+	 border:solid #dcdcdc 1px;
+	 padding:25px;
+	 box-shadow: 0px 0px 1px rgba(0,0,0,0.2);
+}
+
+table tr,td
+{
+	 padding:15px;
+	 border:solid #e1e1e1 1px;
+}
+table tr td input
+{
+	 width:97%;
+	 height:45px;
+	 border:solid #e1e1e1 1px;
+	 border-radius:3px;
+	 padding-left:10px;
+	 font-family:Verdana, Geneva, sans-serif;
+	 font-size:16px;
+	 font-weight: bold;
+	 background-color: blue;
+	 background:#f9f9f9;
+	 transition-duration:0.5s;
+	 box-shadow: inset 0px 0px 1px rgba(0,0,0,0.4);
+}
+
+table tr td button
+{
+	 width:100%;
+	 height:45px;
+	 border:0px;
+	 background:rgba(12,45,78,11);
+	 background:-moz-linear-gradient(top, #595959 , #515151);
+	 border-radius:3px;
+	 box-shadow: 1px 1px 1px rgba(1,0,0,0.2);
+	 color:#f9f9f9;
+	 font-family:Verdana, Geneva, sans-serif;
+	 font-size:18px;
+	 font-weight:bolder;
+	 text-transform:uppercase;
+}
+
+table tr td button:active
+{
+	 position:relative;
+	 top:1px;
+}
+
+/*Button label*/
+table tr td a
+{
+	 border:3px solid white;
+	 font-weight: bold;
+	 text-decoration:none;
+	 color:#0000cc;
+	 font-family:Verdana, Georiga, sans-serif;
+	 font-size:18px;
+	 background-color: #fff;
+}
+
+/* css for home page  */
+
+*
+{
+	 margin:0;
+	 padding:0;
+}
+
+#header
+{
+	 width:100%;
+	 height:60px;
+	 background:rgba(00,11,22,33);
+	 color:#9fa8b0;
+	 font-family:Verdana, Geneva, sans-serif;
+}
+
+#header #left
+{
+	 float:left;
+	 position:relative;
+}
+
+#header #left label
+{
+	 position:relative;
+	 top:5px;
+	 left:100px;
+	 font-size:35px;
+}
+
+#header #right
+{
+	 float:right;
+	 position:relative;
+}
+
+#header #right #content
+{
+	 position:relative;
+	 top:20px;
+	 right:100px;
+	 color:#fff;
+}
+
+#header #right #content a
+{
+ 	color:#00a2d1;
+}
+
+
+
+#b{
+	background-color: #e7e7e7;
+    color: blue;
+    border: 2px solid #e7e7e7;
+    font-family: georgia;
+    font-size: 20px;
+    transition-duration: 0.4s;
+    
+}
+
+#b:hover {
+    background-color: #fff;
+    color: white;
+    
+}
+
+/*personalised timetable */
+#personalisedtimetable{
+ height:100%;
+ width:41%;
+ background-color:#446CB3;
+ margin:0 auto;
+ margin-top:20em;
+ overflow:hidden;
+}
+
+
+.droppable { 
+ width: 100%; 
+ height: 4em; 
+ border-style:solid;
+ border-top:black;
+ float:left; 
+ background-color:#D2D7D3;}
+
+.draggable {
+ width: 40%; 
+ height: 3em; 
+ padding: 0.5em; 
+ float: right;  
+ background-color:#ECF0F1;
+ z-index:1;
+}
+
+
+#timeHead{
+ height:10%;
+ width:100%;
+ background-color:#81CFE0;
+ text-align:center;
+}
+
+ top {
+	display: none;
+	width: 3.4em;
+	height: 60px;
+	text-indent: -9999px;
+	position: fixed;
+	z-index: 999;
+ 	background-color: #333;
+	bottom: 20px;
+	background-image: url("top.png");
+	
+	
+	float:right;
+}
+
+/* Search Style*/
+input
+	{
+		width:250px;
+		font-size:24px;
+	
+	}
+
+#here
+	{
+width:225px;
+height:157px;
+padding-left:20px;
+border: 1px solid grey;
+display:none;
+	}
+				
+#here a
+{
+display:block;
+width:98%;
+padding:1%;
+font-family: georgia;
+font-size:21px;
+border-bottom:1px solid grey;
+}
+			
+#sear
+{
+	padding-top:70px;
+	padding-left:650px;
+	
+}
+
+
+
+
+
+#timetableDiv{
+	 width: 1000px;   
+    overflow: auto;  
+    
+	border: 1px solid black;
+}
+#tableTime, th, td {
+   border: 3px solid black;
+   font-family: helvetica;
+   color:#1a75ff;
+}
+.titlecell{
+font-size: 300%;	
+	color: #e62e00;
+}
+
+@media (max-width: 450px) {
+	tableTime, th, td {
+   border: 3px solid black;
+   font-family: helvetica;
+   font-size: 200%;
+   color:#1a75ff;
+}
+#randomiser{
+	font-size: 200%;
+	
+}
+#shows{
+	font-size: 200%;
+	
+}
+#header{
+	font-size: 200%;
+	
+}
+.titlecell{
+font-size: 300%;	
+	color: #e62e00;
+}
+	
+	
+	
+	
+}
